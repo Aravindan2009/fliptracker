@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#064e3b"/>
+      <stop offset="100%" stop-color="#022c22"/>
+    </linearGradient>
+    <linearGradient id="iconGrad" x1="140" y1="80" x2="380" y2="440" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="50%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="arrowGrad" x1="280" y1="60" x2="400" y2="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#6ee7b7"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+  <!-- Background rounded square -->
+  <rect width="512" height="512" rx="108" fill="url(#bgGrad)"/>
+  <!-- Subtle inner glow -->
+  <rect width="512" height="512" rx="108" fill="none" stroke="#10b981" stroke-width="2" opacity="0.3"/>
+  <!-- Stylized F letterform -->
+  <path d="M160 400 L160 112 L352 112" stroke="url(#iconGrad)" stroke-width="52" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M160 248 L300 248" stroke="url(#iconGrad)" stroke-width="52" stroke-linecap="round" fill="none"/>
+  <!-- Flip arrow (circular motion indicator) -->
+  <path d="M320 148 C380 100, 420 150, 400 210 C385 255, 340 268, 310 252" stroke="url(#arrowGrad)" stroke-width="28" stroke-linecap="round" fill="none"/>
+  <!-- Arrow head -->
+  <polygon points="300,230 330,260 280,264" fill="#06b6d4"/>
+</svg>
